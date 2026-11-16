@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ICT Training Centre</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body id="top">
+
+    <header>
+        <h1>ISBAT Student ICT Training Centre</h1>
+        <p>Learn practical computer skills for your future</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Training Centre</h2>
+            <p>Our centre helps students gain useful ICT knowledge and practical skills.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The ISBAT Student ICT Training Centre provides training to students who want
+                to improve their computer knowledge. We offer different programmes for beginners
+                and students who want to improve their skills.</p>
+            <p>Students learn through practical lessons, demonstrations and group activities.
+                Our aim is to help learners become confident when using technology.</p>
+            <img class="training-image"
+                 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                 alt="Students learning and working with computers">
+        </section>
+
+        <section id="courses">
+            <h2>Available Training Programmes</h2>
+            <ul class="course-list">
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>Database Management</li>
+                <li>Cybersecurity</li>
+            </ul>
+
+            <h3>Steps to Register</h3>
+            <ol class="steps-list">
+                <li>Choose the training programme you want.</li>
+                <li>Fill in the student registration form.</li>
+                <li>Check that the information you entered is correct.</li>
+                <li>Submit the form to complete your registration.</li>
+            </ol>
+
+            <h3>Course Cards</h3>
+            <div class="course-cards">
+                <div class="course-card">
+                    <span class="register-label">Register Now</span>
+                    <h3>Web Development</h3>
+                    <p>Learn how to create websites using HTML, CSS and other web tools.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Computer Networking</h3>
+                    <p>Learn how computers connect and share information in a network.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Database Management</h3>
+                    <p>Learn how to store, organise and manage information.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Understand basic ways of protecting computers and information.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timetable">
+            <h2>Weekly Training Timetable</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Mr. James</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Computer Networking</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Ms. Sarah</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Database Management</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Mr. Peter</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Cybersecurity</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Ms. Grace</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+            <form action="#" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="studentno">Student Number:</label>
+                <input type="text" id="studentno" name="studentno" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p class="form-heading">Gender:</p>
+                <div class="choice">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <label for="course">Preferred Course:</label>
+                <select id="course" name="course">
+                    <option value="">Choose a course</option>
+                    <option>Web Development</option>
+                    <option>Computer Networking</option>
+                    <option>Database Management</option>
+                    <option>Cybersecurity</option>
+                </select>
+
+                <p class="form-heading">Study Mode:</p>
+                <div class="choice">
+                    <label><input type="radio" name="mode" value="Full-time"> Full-time</label>
+                    <label><input type="radio" name="mode" value="Part-time"> Part-time</label>
+                </div>
+
+                <p class="form-heading">Additional support needed:</p>
+                <div class="choice">
+                    <label><input type="checkbox" name="support" value="Computer"> Computer access</label>
+                    <label><input type="checkbox" name="support" value="Internet"> Internet access</label>
+                </div>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"
+                          placeholder="Write any additional information here"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <a class="back-to-top" href="#top">Back to Top</a>
+
+    <footer>
+        <p>&copy; 2026 ISBAT Student ICT Training Centre. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
